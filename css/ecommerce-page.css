@@ -17,6 +17,9 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  gap: 0;
   background-color: #121216;
 }
 
@@ -37,12 +40,21 @@ section {
 }
 
 .header-content {
+  display: flex;
+  align-items: center;
+  gap: 10%;
 }
 
 .logo-search {
+  display: flex;
+  gap: 20px;
 }
 
 .logo {
+  background: #1f1f27;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
   min-width: max-content;
   font-size: 28px;
   font-weight: 900;
@@ -71,6 +83,8 @@ section {
 }
 
 .options {
+  display: flex;
+  gap: 20px;
 }
 
 .option {
@@ -85,6 +99,8 @@ section {
 }
 
 .categories {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #2b2d36;
   padding-top: 20px;
 }
@@ -111,6 +127,9 @@ section {
 }
 
 .view-options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
 i.fa-th-list {
@@ -182,6 +201,11 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  width: 300px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .grid .product {
@@ -210,6 +234,10 @@ i.fa-th-list {
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .lines .product {
@@ -222,35 +250,59 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product-action {
+  display: flex;
+  gap: 40px;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines-action .product {
+  display: flex;
 }
 
 .lines-action .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  padding: 20px;
 }
 
 .lines-action .product-data {
+  display: flex;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
